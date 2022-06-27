@@ -10,3 +10,14 @@ C:\Users\asjus\projetos\Avanade.Challenge.Api\Avanade.Challenge.Infra.Database\o
 C:\Users\asjus\projetos\Avanade.Challenge.Api\Avanade.Challenge.Infra.Database\obj\Debug\netcoreapp3.1\Avanade.Challenge.Infra.Database.pdb
 C:\Users\asjus\projetos\Avanade.Challenge.Api\Avanade.Challenge.Infra.Database\obj\Debug\netcoreapp3.1\Avanade.Challenge.Infra.Database.genruntimeconfig.cache
 C:\Users\asjus\projetos\Avanade.Challenge.Api\Avanade.Challenge.Infra.Database\obj\Debug\netcoreapp3.1\Avanade.Challenge.Infra.Database.csproj.AssemblyReference.cache
+C:\Users\asjus\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Infra.Database\bin\Debug\netcoreapp3.1\Avanade.Challenge.Infra.Database.deps.json
+C:\Users\asjus\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Infra.Database\bin\Debug\netcoreapp3.1\Avanade.Challenge.Infra.Database.runtimeconfig.json
+C:\Users\asjus\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Infra.Database\bin\Debug\netcoreapp3.1\Avanade.Challenge.Infra.Database.runtimeconfig.dev.json
+C:\Users\asjus\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Infra.Database\bin\Debug\netcoreapp3.1\Avanade.Challenge.Infra.Database.dll
+C:\Users\asjus\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Infra.Database\bin\Debug\netcoreapp3.1\Avanade.Challenge.Infra.Database.pdb
+C:\Users\asjus\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Infra.Database\obj\Debug\netcoreapp3.1\Avanade.Challenge.Infra.Database.AssemblyInfoInputs.cache
+C:\Users\asjus\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Infra.Database\obj\Debug\netcoreapp3.1\Avanade.Challenge.Infra.Database.AssemblyInfo.cs
+C:\Users\asjus\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Infra.Database\obj\Debug\netcoreapp3.1\Avanade.Challenge.Infra.Database.csproj.CoreCompileInputs.cache
+C:\Users\asjus\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Infra.Database\obj\Debug\netcoreapp3.1\Avanade.Challenge.Infra.Database.dll
+C:\Users\asjus\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Infra.Database\obj\Debug\netcoreapp3.1\Avanade.Challenge.Infra.Database.pdb
+C:\Users\asjus\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Infra.Database\obj\Debug\netcoreapp3.1\Avanade.Challenge.Infra.Database.genruntimeconfig.cache

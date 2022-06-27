@@ -1,5 +1,6 @@
 using Avanade.Challenge.Api.Infra.Database.Repository;
 using Avanade.Challenge.Infra.Database;
+using Avanade.Challenge.Infra.Database.Facade;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting; 
 using Microsoft.Extensions.Configuration;
@@ -22,7 +23,9 @@ namespace Avanade.Challenge.Api
         {
             services.AddDbContext<AppContexto>();
             services.AddControllers();
-            services.AddScoped<TopicRepository>(); 
+            services.AddScoped<TopicRepository>();
+            //services.AddScoped<AnswerFacade>();
+            
             services.AddSwaggerGen(); 
         }
 

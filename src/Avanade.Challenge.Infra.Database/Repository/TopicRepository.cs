@@ -2,17 +2,19 @@
 using System.Threading.Tasks;
 using Avanade.Challenge.Api.Infra.Database.Domain;
 using Avanade.Challenge.Infra.Database;
+using Avanade.Challenge.Infra.Database.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace Avanade.Challenge.Api.Infra.Database.Repository
 {
-    public class TopicRepository
+    public class TopicRepository : ITopicRepository
     {
         private readonly AppContexto appContexto;
         public TopicRepository(AppContexto _appContexto)
         {
             appContexto = _appContexto;
         }
+        public TopicRepository() { }
         public async Task<IEnumerable<Topic>> GetListAsync()
         { 
             return await appContexto.Topics.ToListAsync();
@@ -20,13 +22,13 @@ namespace Avanade.Challenge.Api.Infra.Database.Repository
 
         public async Task<Topic> GetIndexAsync(int id)
         {
-            return await appContexto.Topics.FirstOrDefaultAsync(m => m.Id == id); 
+            return await appContexto.Topics.FirstOrDefaultAsync(x => x.Id == id); 
         }
 
-        public async Task SaveAsync(Topic topic)
+        public async Task<int> SaveAsync(Topic topic)
         {
             appContexto.Add(topic);
-            await appContexto.SaveChangesAsync();  
+            return await appContexto.SaveChangesAsync();  
         }
 
         public async Task UpdateAsync(Topic topic)
@@ -49,5 +51,9 @@ namespace Avanade.Challenge.Api.Infra.Database.Repository
             }
             appContexto.Topics.Remove(entity);
         }
+        public Topic Teste(int id)
+        {
+            return new Topic("sdfsdf");
+        } 
     }
 }

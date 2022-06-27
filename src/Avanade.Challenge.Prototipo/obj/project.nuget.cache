@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LomZF7AguFpH4IorITPvXJQzYWyMS7Hmd4LuZ8slPWcWLwbaf3zTqHPXKpqqHBOWkqnSGY9rbf5vQf/tcxKgMA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\asjus\\projetos\\Avanade.Challenge.Api\\src\\Avanade.Challenge.Prototipo\\Avanade.Challenge.Prototipo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\asjus\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+  ],
+  "logs": []
+}

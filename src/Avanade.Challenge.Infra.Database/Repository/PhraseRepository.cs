@@ -1,5 +1,7 @@
 ﻿using Avanade.Challenge.Api.Infra.Database.Domain;
 using Avanade.Challenge.Infra.Database;
+using Avanade.Challenge.Infra.Database.Facade;
+using Avanade.Challenge.Infra.Database.Facade.Interface;
 using Microsoft.EntityFrameworkCore; 
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -9,9 +11,11 @@ namespace Avanade.Challenge.Api.Infra.Database.Repository
     public class PhraseRepository
     {
         private readonly AppContexto appContexto;
+        private readonly IAnswerFacade answerFacade;
         public PhraseRepository(AppContexto _appContexto)
         {
             appContexto = _appContexto;
+            answerFacade = new AnswerFacade();
         }
 
         public async Task<IEnumerable<Phrase>> GetListAsync()
@@ -49,6 +53,11 @@ namespace Avanade.Challenge.Api.Infra.Database.Repository
                 return;
             }
             appContexto.Phrases.Remove(entity);
+        }
+
+        public bool CheckPhrase(Phrase phrase, string answer)
+        {
+            return answerFacade.CheckFrase(phrase, answer);
         }
     }
 }

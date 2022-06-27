@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avanade.Challenge.Infra.Dat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avanade.Challenge.Web", "Avanade.Challenge.Web\Avanade.Challenge.Web.csproj", "{4A5C1A39-D001-4714-8EE0-B2297AF9BDEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avanade.Challenge.Teste", "Avanade.Challenge.Teste\Avanade.Challenge.Teste.csproj", "{364B28A5-3392-4F53-B92D-E0550F19DD10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avanade.Challenge.Teste", "Avanade.Challenge.Teste\Avanade.Challenge.Teste.csproj", "{364B28A5-3392-4F53-B92D-E0550F19DD10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avanade.Challenge.Prototipo", "Avanade.Challenge.Prototipo\Avanade.Challenge.Prototipo.csproj", "{971CC659-9F20-4157-AF0E-7798BFEC2869}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{364B28A5-3392-4F53-B92D-E0550F19DD10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{364B28A5-3392-4F53-B92D-E0550F19DD10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{364B28A5-3392-4F53-B92D-E0550F19DD10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{971CC659-9F20-4157-AF0E-7798BFEC2869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{971CC659-9F20-4157-AF0E-7798BFEC2869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{971CC659-9F20-4157-AF0E-7798BFEC2869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{971CC659-9F20-4157-AF0E-7798BFEC2869}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
