@@ -4,7 +4,7 @@
 
 > Desafio.     
 
-* Utilizar os seguintes tipos primitivos (int, bool, datetime, string, arrays (Lista ou Cole��es))
+* Utilizar os seguintes tipos primitivos (int, bool, datetime, string, arrays (Lista ou Colecões))
 * Ter 1 exemplo de cada pilar de OOP
 * Ter 1 exemplo de Design Pattern (Criação, Comportamento ou estrutura)
 * Ter um relacionamento entre os objetos (1:1 ou 1:n ou n:n)
