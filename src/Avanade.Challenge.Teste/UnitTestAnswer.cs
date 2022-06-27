@@ -74,13 +74,24 @@ namespace Avanade.Challenge.Teste
             Assert.True(result);
         }
 
-
-
         [Fact(DisplayName = "Verificando Answer Com Caracteres Especiais")]
         public void CheckIfOkErrorCharactere()
         {
             string respota = "test KAYAK";
             Phrase phrase = new Phrase(0, new Topic(""), "test, kayak");
+
+            bool result = phraseRepository.CheckPhrase(phrase, respota);
+            Assert.True(result);
+        }
+
+        [Fact(DisplayName = "Verificando Erros")]
+        public void CheckIfErrorCharactere()
+        {
+            string respota = "aest, bayal";
+            Phrase phrase = new Phrase(0, new Topic(""), "test, kayak");
+
+            bool result = phraseRepository.CheckPhrase(phrase, respota);
+            Assert.False(result);
         }
     }
 }
