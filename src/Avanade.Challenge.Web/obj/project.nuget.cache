@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+E8ccRCLWD/ZF/zIpHN5DkwL/gxh9kD8b2or7IyLITxW3QV5Fm4XbKPX9QQzq9/rics7TL5OJCXwZQ52C4VzDg==",
+  "dgSpecHash": "AN9t2HF53CXfH/M9P/YHXxj3Bg85afsmDzZhKmh99AmDmNgjaDalpdkivKUKy3Vafij5yEdY/R3OhrY5xTiFpA==",
   "success": true,
   "projectFilePath": "C:\\Users\\assis.siebra.barbosa\\projetos\\Avanade.Challenge.Api\\src\\Avanade.Challenge.Web\\Avanade.Challenge.Web.csproj",
   "expectedPackageFiles": [
@@ -54,6 +54,8 @@
     "C:\\Users\\assis.siebra.barbosa\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\3.1.5\\microsoft.visualstudio.web.codegenerators.mvc.3.1.5.nupkg.sha512",
     "C:\\Users\\assis.siebra.barbosa\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\assis.siebra.barbosa\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\assis.siebra.barbosa\\.nuget\\packages\\naudio.core\\2.0.0\\naudio.core.2.0.0.nupkg.sha512",
+    "C:\\Users\\assis.siebra.barbosa\\.nuget\\packages\\naudio.lame\\2.0.1\\naudio.lame.2.0.1.nupkg.sha512",
     "C:\\Users\\assis.siebra.barbosa\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\assis.siebra.barbosa\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\assis.siebra.barbosa\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",

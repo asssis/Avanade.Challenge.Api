@@ -7,10 +7,10 @@ namespace Avanade.Challenge.Prototipo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            string frase = @"assis teste hhh adf";
-            string resposta = @"asssis teste hhhh abf";
-            VerificarFrase(frase, resposta);
+            //Console.WriteLine("Hello World!");
+            //string frase = @"assis teste hhh adf";
+            //string resposta = @"asssis teste hhhh abf";
+            //VerificarFrase(frase, resposta);  
         }
 
         public static List<int> VerificarFrase(string frase, string resposta)

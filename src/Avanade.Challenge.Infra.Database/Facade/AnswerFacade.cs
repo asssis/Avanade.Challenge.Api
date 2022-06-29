@@ -13,12 +13,13 @@ namespace Avanade.Challenge.Infra.Database.Facade
         public AnswerFacade()
         {
             checkFacade = new CheckFacade();
+            checkComplex = new CheckComplexFacade();
         }
         public bool CheckFrase(Phrase phrase, string answer)
         {
             bool resultado = checkFacade.Check(phrase, answer);
 
-            if(resultado)
+            if(!resultado)
                 resultado = checkComplex.Check(phrase, answer);
 
             return resultado;

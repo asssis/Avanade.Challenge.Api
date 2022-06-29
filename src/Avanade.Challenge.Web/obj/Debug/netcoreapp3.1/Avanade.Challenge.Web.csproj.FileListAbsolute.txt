@@ -489,3 +489,7 @@ C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challen
 C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Web\obj\Debug\netcoreapp3.1\Avanade.Challenge.Web.genruntimeconfig.cache
 C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Activity.cshtml.g.cs
+C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Web\bin\Debug\netcoreapp3.1\libmp3lame.32.dll
+C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Web\bin\Debug\netcoreapp3.1\libmp3lame.64.dll
+C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Web\bin\Debug\netcoreapp3.1\NAudio.Core.dll
+C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Web\bin\Debug\netcoreapp3.1\NAudio.Lame.dll

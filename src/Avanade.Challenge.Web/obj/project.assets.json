@@ -808,6 +808,30 @@
           }
         }
       },
+      "NAudio.Core/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NAudio.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NAudio.Core.dll": {}
+        }
+      },
+      "NAudio.Lame/2.0.1": {
+        "type": "package",
+        "dependencies": {
+          "NAudio.Core": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/NAudio.Lame.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NAudio.Lame.dll": {}
+        },
+        "build": {
+          "build/NAudio.Lame.targets": {}
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -3962,6 +3986,36 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "NAudio.Core/2.0.0": {
+      "sha512": "knmGOIYbzn9ZGkFcVs5d3zEYvi50jVriyEirVtAHjkcDoo2ziK32bZb7KkFARLD4lhCGkqp6uT0+0fc4JIfQcw==",
+      "type": "package",
+      "path": "naudio.core/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/NAudio.Core.dll",
+        "naudio-icon.png",
+        "naudio.core.2.0.0.nupkg.sha512",
+        "naudio.core.nuspec"
+      ]
+    },
+    "NAudio.Lame/2.0.1": {
+      "sha512": "MhVKOsKFCo9o/ghReT7x0dOKILPRN3crZjBP85vz02jfDeFPmSGXGdNIXN0FYIPDKH7irFcI9q0IeYlXQwJfaQ==",
+      "type": "package",
+      "path": "naudio.lame/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/NAudio.Lame.targets",
+        "build/libmp3lame.32.dll",
+        "build/libmp3lame.64.dll",
+        "lib/netstandard2.0/NAudio.Lame.dll",
+        "lib/netstandard2.0/NAudio.Lame.pdb",
+        "naudio.lame.2.0.1.nupkg.sha512",
+        "naudio.lame.nuspec"
       ]
     },
     "NETStandard.Library/1.6.1": {
@@ -8491,7 +8545,8 @@
       "Microsoft.EntityFrameworkCore >= 3.1.26",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.25",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.25",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.5"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.5",
+      "NAudio.Lame >= 2.0.1"
     ]
   },
   "packageFolders": {
@@ -8559,6 +8614,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[3.1.5, )"
+          },
+          "NAudio.Lame": {
+            "target": "Package",
+            "version": "[2.0.1, )"
           }
         },
         "imports": [
