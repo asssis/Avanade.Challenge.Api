@@ -18,12 +18,12 @@ namespace Avanade.Challenge.Infra.Database.Facade
         public bool Check(Phrase phrase, string answer)
         { 
             List<int> checkinWords = VerificarFrase(phrase.Expression, answer);
-            if (checkinWords.FindAll(x => x != 0).Count == 0)
-                return true;
-            else if (checkinWords.FindAll(x => x == 1).Count <= 1)
-                return true;
 
-            return false;
+            int teste = checkinWords.FindAll(x => x != 0 || x == 1).Count;
+            if (checkinWords.FindAll(x => x != 0 || x == 1).Count > 0)
+                return false; 
+
+            return true;
         }
 
 
@@ -35,7 +35,10 @@ namespace Avanade.Challenge.Infra.Database.Facade
 
             for (int i = 0; i < wordPhrase.Length; i++)
             {
-                int checkinWord = VerificarPalavras(wordPhrase[i], wordAnswer[i]);
+                int checkinWord = 3;
+                if (wordAnswer.Length > i)
+                    checkinWord = VerificarPalavras(wordPhrase[i], wordAnswer[i]);
+
                 if (checkinWord < 2) 
                     verificacao.Add(checkinWord);
                 else
