@@ -8,6 +8,8 @@ namespace Avanade.Challenge.Api.Infra.Database.Domain
         {
             Descricao = descricao;
         }
+        public Topic() 
+        { }
 
         [Key]
         public int Id { get; set; }

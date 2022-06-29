@@ -27,7 +27,7 @@ namespace Avanade.Challenge.Teste
         public void CheckIfOk()
         {
             string respota = "test kayak";
-            Phrase phrase = new Phrase(0, new Topic(""), "test kayak");
+            Phrase phrase = new Phrase(0, null) { Expression = "test kayak" };
 
             bool result = phraseRepository.CheckPhrase(phrase, respota);
             Assert.True(result);
@@ -38,7 +38,7 @@ namespace Avanade.Challenge.Teste
         public void CheckIfOkLastError()
         {
             string respota = "test kayakk";
-            Phrase phrase = new Phrase(0, new Topic(""), "test kayak");
+            Phrase phrase = new Phrase(0, null) { Expression = "test kayak" };
 
             bool result = phraseRepository.CheckPhrase(phrase, respota);
             Assert.True(result);
@@ -48,7 +48,7 @@ namespace Avanade.Challenge.Teste
         public void CheckIfOkMiddleError()
         {
             string respota = "test kkayak";
-            Phrase phrase = new Phrase(0, new Topic(""), "test kayak");
+            Phrase phrase = new Phrase(0, null) { Expression = "test kayak" };
 
             bool result = phraseRepository.CheckPhrase(phrase, respota);
             Assert.True(result);
@@ -58,7 +58,7 @@ namespace Avanade.Challenge.Teste
         public void CheckIfOkMiddleErrorOnLetter()
         {
             string respota = "test kaoak";
-            Phrase phrase = new Phrase(0, new Topic(""), "test kayak");
+            Phrase phrase = new Phrase(0, null) { Expression = "test kayak" };
 
             bool result = phraseRepository.CheckPhrase(phrase, respota);
             Assert.True(result);
@@ -68,7 +68,7 @@ namespace Avanade.Challenge.Teste
         public void CheckIfOkMiddleErrorOnLetterUpcase()
         {
             string respota = "test KAYAK";
-            Phrase phrase = new Phrase(0, new Topic(""), "test kayak");
+            Phrase phrase = new Phrase(0, null) { Expression = "test kayak" };
 
             bool result = phraseRepository.CheckPhrase(phrase, respota);
             Assert.True(result);
@@ -80,7 +80,7 @@ namespace Avanade.Challenge.Teste
         public void CheckIfOkErrorCharactere()
         {
             string respota = "test KAYAK";
-            Phrase phrase = new Phrase(0, new Topic(""), "test, kayak");
+            Phrase phrase = new Phrase(0, null) { Expression = "test, kayak" };
         }
     }
 }

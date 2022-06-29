@@ -11,3 +11,16 @@ C:\Users\asjus\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Prototipo\ob
 C:\Users\asjus\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Prototipo\obj\Debug\netcoreapp3.1\Avanade.Challenge.Prototipo.pdb
 C:\Users\asjus\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Prototipo\obj\Debug\netcoreapp3.1\Avanade.Challenge.Prototipo.genruntimeconfig.cache
 C:\Users\asjus\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Prototipo\obj\Debug\netcoreapp3.1\Avanade.Challenge.Prototipo.csproj.AssemblyReference.cache
+C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Prototipo\bin\Debug\netcoreapp3.1\Avanade.Challenge.Prototipo.exe
+C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Prototipo\bin\Debug\netcoreapp3.1\Avanade.Challenge.Prototipo.deps.json
+C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Prototipo\bin\Debug\netcoreapp3.1\Avanade.Challenge.Prototipo.runtimeconfig.json
+C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Prototipo\bin\Debug\netcoreapp3.1\Avanade.Challenge.Prototipo.runtimeconfig.dev.json
+C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Prototipo\bin\Debug\netcoreapp3.1\Avanade.Challenge.Prototipo.dll
+C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Prototipo\bin\Debug\netcoreapp3.1\Avanade.Challenge.Prototipo.pdb
+C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Prototipo\obj\Debug\netcoreapp3.1\Avanade.Challenge.Prototipo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Prototipo\obj\Debug\netcoreapp3.1\Avanade.Challenge.Prototipo.AssemblyInfoInputs.cache
+C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Prototipo\obj\Debug\netcoreapp3.1\Avanade.Challenge.Prototipo.AssemblyInfo.cs
+C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Prototipo\obj\Debug\netcoreapp3.1\Avanade.Challenge.Prototipo.csproj.CoreCompileInputs.cache
+C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Prototipo\obj\Debug\netcoreapp3.1\Avanade.Challenge.Prototipo.dll
+C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Prototipo\obj\Debug\netcoreapp3.1\Avanade.Challenge.Prototipo.pdb
+C:\Users\assis.siebra.barbosa\projetos\Avanade.Challenge.Api\src\Avanade.Challenge.Prototipo\obj\Debug\netcoreapp3.1\Avanade.Challenge.Prototipo.genruntimeconfig.cache

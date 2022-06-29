@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "364b28a5-3392-4f53-b92d-e0550f19dd10": {
+      "ProjectGuid": "364b28a5-3392-4f53-b92d-e0550f19dd10",
+      "DisplayName": "Avanade.Challenge.Teste",
+      "ColorIndex": 0
+    },
+    "83b8355a-91ca-462a-b459-b6d0966d7977": {
+      "ProjectGuid": "83b8355a-91ca-462a-b459-b6d0966d7977",
+      "DisplayName": "Avanade.Challenge.Api",
+      "ColorIndex": 1
+    },
+    "4a5c1a39-d001-4714-8ee0-b2297af9bdeb": {
+      "ProjectGuid": "4a5c1a39-d001-4714-8ee0-b2297af9bdeb",
+      "DisplayName": "Avanade.Challenge.Web",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

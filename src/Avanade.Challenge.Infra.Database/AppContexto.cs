@@ -18,11 +18,7 @@ namespace Avanade.Challenge.Infra.Database
             optionsBuilder.UseSqlServer(@"Data Source='127.0.0.1,1433';User Id=sa;Password=aaabbbccc1234;Initial Catalog=LearningEnglish;");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        { 
-            modelBuilder.Entity<Phrase>(entity =>
-            {
-                entity.HasKey(e => new { e.TopicId });
-            });
+        {  
             modelBuilder.Entity<Phrase>().HasIndex(b => b.Expression).IsUnique();
             modelBuilder.Entity<Topic>().HasIndex(b => b.Descricao).IsUnique();
         }

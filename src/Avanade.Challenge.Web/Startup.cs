@@ -52,10 +52,10 @@ namespace Avanade.Challenge.Web
 
             app.UseAuthorization();
 
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapRazorPages();
-            //});
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapRazorPages();
+            });
 
             app.UseEndpoints(endpoints =>
             {

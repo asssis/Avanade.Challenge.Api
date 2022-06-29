@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Avanade.Challenge.Api.Infra.Database.Domain.Topic>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Dashboard</h1>
+ 
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                <a href="/Home/Activity/@item.Id">Iniciar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -23,13 +23,14 @@ namespace Avanade.Challenge.Infra.Database.Migrations
                 name: "Phrases",
                 columns: table => new
                 {
-                    TopicId = table.Column<int>(nullable: false),
-                    Id = table.Column<int>(nullable: false),
-                    Expression = table.Column<string>(maxLength: 200, nullable: false)
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Expression = table.Column<string>(maxLength: 200, nullable: false),
+                    TopicId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Phrases", x => x.TopicId);
+                    table.PrimaryKey("PK_Phrases", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Phrases_Topics_TopicId",
                         column: x => x.TopicId,
@@ -43,6 +44,11 @@ namespace Avanade.Challenge.Infra.Database.Migrations
                 table: "Phrases",
                 column: "Expression",
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Phrases_TopicId",
+                table: "Phrases",
+                column: "TopicId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Topics_Descricao",

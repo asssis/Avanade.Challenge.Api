@@ -2,12 +2,13 @@
 
 @{
     ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" href="/Phrases/Create">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -34,12 +35,12 @@
                 @Html.DisplayFor(modelItem => item.Expression)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Topic.Id)
+                @Html.DisplayFor(modelItem => item.Topic.Descricao)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.TopicId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.TopicId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.TopicId">Delete</a>
+                <a href="/Phrases/Edit/@item.Id" asp-route-id="@item.TopicId">Edit</a> |
+                <a href="/Phrases/Details/@item.Id" asp-route-id="@item.TopicId">Details</a> |
+                <a href="/Phrases/Delete/@item.Id" asp-route-id="@item.TopicId">Delete</a>
             </td>
         </tr>
 }

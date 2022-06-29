@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Avanade.Challenge.Infra.Database.Migrations
 {
     [DbContext(typeof(AppContexto))]
-    [Migration("20220624022637_InitialMigration")]
+    [Migration("20220629023213_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -22,21 +22,25 @@ namespace Avanade.Challenge.Infra.Database.Migrations
 
             modelBuilder.Entity("Avanade.Challenge.Api.Infra.Database.Domain.Phrase", b =>
                 {
-                    b.Property<int>("TopicId")
-                        .HasColumnType("int");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Expression")
                         .IsRequired()
                         .HasColumnType("nvarchar(200)")
                         .HasMaxLength(200);
 
-                    b.Property<int>("Id")
+                    b.Property<int>("TopicId")
                         .HasColumnType("int");
 
-                    b.HasKey("TopicId");
+                    b.HasKey("Id");
 
                     b.HasIndex("Expression")
                         .IsUnique();
+
+                    b.HasIndex("TopicId");
 
                     b.ToTable("Phrases");
                 });

@@ -45,15 +45,14 @@ namespace Avanade.Challenge.Web.Controllers
 
         // GET: Topics/Create
         public IActionResult Create()
-        {
+        { 
             return View();
         }
 
         // POST: Topics/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
+        [HttpPost] 
         public async Task<IActionResult> Create([Bind("Id,Descricao")] Topic topic)
         {
             if (ModelState.IsValid)
@@ -63,7 +62,7 @@ namespace Avanade.Challenge.Web.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(topic);
-        }
+            }
 
         // GET: Topics/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -85,7 +84,6 @@ namespace Avanade.Challenge.Web.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Descricao")] Topic topic)
         {
             if (id != topic.Id)
@@ -136,7 +134,6 @@ namespace Avanade.Challenge.Web.Controllers
 
         // POST: Topics/Delete/5
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var topic = await _context.Topics.FindAsync(id);

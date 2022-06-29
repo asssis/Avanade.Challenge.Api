@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\asjus\\projetos\\Avanade.Challenge.Api\\src\\Avanade.Challenge.Infra.Database\\Avanade.Challenge.Infra.Database.csproj": {}
+    "C:\\Users\\assis.siebra.barbosa\\projetos\\Avanade.Challenge.Api\\src\\Avanade.Challenge.Infra.Database\\Avanade.Challenge.Infra.Database.csproj": {}
   },
   "projects": {
-    "C:\\Users\\asjus\\projetos\\Avanade.Challenge.Api\\src\\Avanade.Challenge.Infra.Database\\Avanade.Challenge.Infra.Database.csproj": {
+    "C:\\Users\\assis.siebra.barbosa\\projetos\\Avanade.Challenge.Api\\src\\Avanade.Challenge.Infra.Database\\Avanade.Challenge.Infra.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asjus\\projetos\\Avanade.Challenge.Api\\src\\Avanade.Challenge.Infra.Database\\Avanade.Challenge.Infra.Database.csproj",
+        "projectUniqueName": "C:\\Users\\assis.siebra.barbosa\\projetos\\Avanade.Challenge.Api\\src\\Avanade.Challenge.Infra.Database\\Avanade.Challenge.Infra.Database.csproj",
         "projectName": "Avanade.Challenge.Infra.Database",
-        "projectPath": "C:\\Users\\asjus\\projetos\\Avanade.Challenge.Api\\src\\Avanade.Challenge.Infra.Database\\Avanade.Challenge.Infra.Database.csproj",
-        "packagesPath": "C:\\Users\\asjus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asjus\\projetos\\Avanade.Challenge.Api\\src\\Avanade.Challenge.Infra.Database\\obj\\",
+        "projectPath": "C:\\Users\\assis.siebra.barbosa\\projetos\\Avanade.Challenge.Api\\src\\Avanade.Challenge.Infra.Database\\Avanade.Challenge.Infra.Database.csproj",
+        "packagesPath": "C:\\Users\\assis.siebra.barbosa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\assis.siebra.barbosa\\projetos\\Avanade.Challenge.Api\\src\\Avanade.Challenge.Infra.Database\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\asjus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\assis.siebra.barbosa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

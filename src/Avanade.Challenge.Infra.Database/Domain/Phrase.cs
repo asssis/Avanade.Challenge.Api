@@ -5,12 +5,13 @@ namespace Avanade.Challenge.Api.Infra.Database.Domain
 {
     public class Phrase
     {
-        public Phrase(int topicId, Topic topic, string expression)
-        {
-            this.Expression = expression;
+        public Phrase(int topicId, Topic topic)
+        { 
             this.TopicId = topicId;
             this.Topic = topic;
         }
+        public Phrase()
+        { }
 
         [Key]
         public int Id { get; set; }

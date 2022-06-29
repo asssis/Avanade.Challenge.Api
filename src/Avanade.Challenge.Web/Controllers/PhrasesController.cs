@@ -21,8 +21,8 @@ namespace Avanade.Challenge.Web.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var appContexto = _context.Phrases.Include(p => p.Topic);
-            return View(await appContexto.ToListAsync());
+            var phraseList = await _context.Phrases.Include(p => p.Topic).ToListAsync();
+            return View(phraseList);
         }
          
         public async Task<IActionResult> Details(int? id)
@@ -34,7 +34,7 @@ namespace Avanade.Challenge.Web.Controllers
 
             var phrase = await _context.Phrases
                 .Include(p => p.Topic)
-                .FirstOrDefaultAsync(m => m.TopicId == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (phrase == null)
             {
                 return NotFound();
@@ -43,14 +43,20 @@ namespace Avanade.Challenge.Web.Controllers
             return View(phrase);
         }
          
-        public IActionResult Create()
+        public async Task<IActionResult> CreateAsync()
         {
-            ViewData["TopicId"] = new SelectList(_context.Topics, "Id", "Id");
+            List<SelectListItem> listTopics = _context.Topics.Select(a =>
+                                 new SelectListItem
+                                 {
+                                     Value = a.Id.ToString(),
+                                     Text = a.Descricao
+                                 }).ToList();
+
+            ViewData["listTopics"] = listTopics;
             return View();
         }
          
-        [HttpPost]
-        [ValidateAntiForgeryToken]
+        [HttpPost] 
         public async Task<IActionResult> Create([Bind("Id,Expression,TopicId")] Phrase phrase)
         {
             if (ModelState.IsValid)
@@ -75,15 +81,23 @@ namespace Avanade.Challenge.Web.Controllers
             {
                 return NotFound();
             }
-            ViewData["TopicId"] = new SelectList(_context.Topics, "Id", "Id", phrase.TopicId);
+
+            List<SelectListItem> listTopics = _context.Topics.Select(a =>
+                                 new SelectListItem
+                                 {
+                                     Value = a.Id.ToString(),
+                                     Text = a.Descricao,
+                                     Selected = (phrase.Id == a.Id)
+                                 }).ToList();
+
+            ViewData["listTopics"] = listTopics; 
             return View(phrase);
         }
          
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Expression,TopicId")] Phrase phrase)
         {
-            if (id != phrase.TopicId)
+            if (id != phrase.Id)
             {
                 return NotFound();
             }
@@ -108,7 +122,13 @@ namespace Avanade.Challenge.Web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["TopicId"] = new SelectList(_context.Topics, "Id", "Id", phrase.TopicId);
+            List<SelectListItem> listTopics = _context.Topics.Select(a =>
+                                 new SelectListItem
+                                 {
+                                     Value = a.Id.ToString(),
+                                     Text = a.Descricao,
+                                     Selected = (phrase.Id == a.Id)
+                                 }).ToList();
             return View(phrase);
         }
          
@@ -121,7 +141,7 @@ namespace Avanade.Challenge.Web.Controllers
 
             var phrase = await _context.Phrases
                 .Include(p => p.Topic)
-                .FirstOrDefaultAsync(m => m.TopicId == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (phrase == null)
             {
                 return NotFound();
