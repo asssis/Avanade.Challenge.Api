@@ -37,16 +37,7 @@ namespace Avanade.Challenge.Web.Controllers
                 .FirstOrDefault(m => m.Id == Id);
 
             bool result = new PhraseRepository(_context).CheckPhrase(phrase, Answer);
-            return Json(new { result = true });
-        }
-        public async Task<IActionResult> CheckinAsync()
-        {
-            var phrase = await _context.Phrases
-                .Include(p => p.Topic)
-                .FirstOrDefaultAsync(m => m.Id == 1);
-
-            bool result = new PhraseRepository(_context).CheckPhrase(phrase, "asdfasd fasd");        
-            return Json(new { result = true } );
+            return Json(new { result = result });
         }
     }
 }

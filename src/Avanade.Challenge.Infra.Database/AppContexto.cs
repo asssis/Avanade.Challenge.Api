@@ -15,7 +15,8 @@ namespace Avanade.Challenge.Infra.Database
         public DbSet<Topic> Topics { get; set; }  
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source='127.0.0.1,1433';User Id=sa;Password=aaabbbccc1234;Initial Catalog=LearningEnglish;");
+           // optionsBuilder.UseSqlServer(@"Data Source='127.0.0.1,1433';User Id=sa;Password=aaabbbccc1234;Initial Catalog=LearningEnglish;");
+           optionsBuilder.UseSqlServer(@"Data Source='database,1433';User Id=sa;Password=mypassword@@aabbcc123;Initial Catalog=LearningEnglish;");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {  

@@ -20,7 +20,12 @@
       "ProjectGuid": "364b28a5-3392-4f53-b92d-e0550f19dd10",
       "DisplayName": "Avanade.Challenge.Teste",
       "ColorIndex": 3
+    },
+    "971cc659-9f20-4157-af0e-7798bfec2869": {
+      "ProjectGuid": "971cc659-9f20-4157-af0e-7798bfec2869",
+      "DisplayName": "Avanade.Challenge.Prototipo",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }

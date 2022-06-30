@@ -54,9 +54,16 @@ namespace Avanade.Challenge.Infra.Database.Facade
 
             for (int i = 0; i < fr.Length; i++)
             {
-                val_asc.Add(ans[i] == fr[i]);
                 if (ans.Length > i)
+                {
+                    val_asc.Add(ans[i] == fr[i]);
                     val_desc.Add(ans[ans.Length - (i + 1)] == fr[fr.Length - (i + 1)]);
+                }
+                else
+                {
+                    val_asc.Add(false);
+                    val_desc.Add(false);
+                }
             }
 
             val_desc.Reverse();

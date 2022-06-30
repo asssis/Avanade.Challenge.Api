@@ -1,45 +1,86 @@
 ﻿@model Avanade.Challenge.Api.Infra.Database.Domain.Phrase
 
 
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
 
-<h1>Question</h1> 
- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<h1>Question</h1>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://code.responsivevoice.org/responsivevoice.js?key=zrgYxefx"></script>
 
 <div class="form-group">
     <input onclick="responsiveVoice.speak('@Model.Expression');" class="btn btn-primary" type='button' value='🔊 Play' />
 </div>
 <input type="hidden" name="Id" value="@Model.Id" />
-
 <div class="form-group">
     <label asp-for="Answer" class="control-label">Answer</label>
-    <input asp-for="Answer" id="Answer" name="Answer" class="form-control" />
+    <input asp-for="Answer" id="Answer" name="Answer" autofocus="focus" class="form-control" />
+    <span asp-validation-for="Answer" class="text-danger" id="ExpressionError"></span>
 </div>
-<button onclick="checkinAnswer()" class="btn btn-primary">Verificar</button>
-<script type="text/javascript">
+<button onclick="seeAnswer()" class="btn btn-primary">Ver Resposta</button>
+<button onclick="checkinAnswer()" class="btn btn-success">Verificar</button>
+<script>
 
-    // responsiveVoice.speak('@Model.Expression');
-         
+        responsiveVoice.speak('@Model.Expression');
 
-     function checkinAnswer()
-     {
-         var answer = $("#Answer").val;
-          $.ajax({
-           type: 'get',
-           url: '/Home/Checkin',
-           data: {
-               Id: '@Model.Id',
-               Answer: answer,
-           },
-           dataType: 'json',
-           success: function (json) {
-               var teste = json;
-           },
-           error: function (e) {
-               var teste = e;
-           }
-       }); 
-     }
+    document.getElementById("Answer").addEventListener("keypress",
+        function(event) {
+                if (event.key === "Enter") {
+                checkinAnswer();
+            }
+        });
+
+        function verificarResposta(json)
+        {
+            if(json.result)
+            {
+                swal("Parabens!", "Resposta Correta", "success").then((willDelete) => {
+                    document.location.reload(true);
+                });
+            }
+            else
+            {
+                swal("Error!", "Resposta Incorreta, Tente Novamente.", "error");
+            }
+        }
+        function seeAnswer()
+        {
+            swal("Resposta!", "@Model.Expression", "info");
+        }
+        function checkinAnswer()
+        {
+              var answer = document.getElementById("Answer").value;
+              if(!answer)
+              {
+                  document.getElementById("ExpressionError").innerText = "Campo Obrigatório";
+                  document.getElementById("Answer").classList.add("is-invalid");
+                  return;
+              }
+              else
+              {
+                  document.getElementById("ExpressionError").innerText = "";
+                  document.getElementById("ExpressionError").classList.remove("is-invalid");
+              }
+
+              $.ajax({
+               type: 'post',
+               url: '/Home/Checkin',
+               dataType: "json",
+               data: {
+                   Id: '@Model.Id',
+                   Answer: answer,
+               },
+               success: function (json) {
+                   verificarResposta(json);
+               },
+               error: function (e) {
+                swal("Error!", "Falha na comunicação com servidor", "error");
+               }
+           });
+         }
 
 
 </script>
