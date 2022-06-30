@@ -24,7 +24,7 @@ services:
     command: dotnet ef database update --project /app/Avanade.Challenge.Infra.Database
     command: dotnet run --project /app/Avanade.Challenge.Web run --urls "http://0.0.0.0:8080"   
     ports:
-      - "8080:8080"
+      - "80:8080"
     links:
       - "db_mssql:database"
 
