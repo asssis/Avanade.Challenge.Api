@@ -2,7 +2,9 @@
 
 ### Requisitos
 
-> Desafio.     
+> Ditato para melhorar o Listem.
+
+Esse foi um sistema desenvolvido em asp.net core, onde atraves do spech são pronunciadas frases e você deve escrever as palavras, com isso você pode melhorar o listem.
 
 * Utilizar os seguintes tipos primitivos (int, bool, datetime, string, arrays (Lista ou Colecões))
 * Ter 1 exemplo de cada pilar de OOP
