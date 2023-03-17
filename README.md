@@ -28,6 +28,7 @@ Detalhes do sistema feito
 * Docker
 * DockerCompose
 * HTML, Javascript, Jquery, Css, Bootstrap.
+* Metodologia DDD e CleanCode
 
 ### O que foi feito
 
