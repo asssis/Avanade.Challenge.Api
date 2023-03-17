@@ -2,10 +2,8 @@
 
 ### Requisitos
 
-> Ditato para melhorar o Listem.
-
-Esse foi um sistema desenvolvido em asp.net core, onde atraves do spech são pronunciadas frases e você deve escrever as palavras, com isso você pode melhorar o listem.
-
+> Desafio
+> 
 * Utilizar os seguintes tipos primitivos (int, bool, datetime, string, arrays (Lista ou Colecões))
 * Ter 1 exemplo de cada pilar de OOP
 * Ter 1 exemplo de Design Pattern (Criação, Comportamento ou estrutura)
@@ -17,8 +15,17 @@ Esse foi um sistema desenvolvido em asp.net core, onde atraves do spech são pro
 * Codigo precisa estar versionado no Github
 * Precisa estar fazendo o build através do Github Actions (Continuos Integration)
 * Utilizar Conventional Commits
+* Criar Trés padrões de projeto
+
+
+Detalhes do sistema feito
+
+Esse foi um sistema desenvolvido em asp.net core, onde atraves do spech são pronunciadas frases e você deve escrever as palavras, com isso você pode melhorar o listem.
+
 
 * Criar um FACADE
+* Criar um Singleton
+* Criar um Mediator
 ---
 Executando Banco de dados
 ```
