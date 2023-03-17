@@ -20,8 +20,18 @@
 
 Detalhes do sistema feito
 
-Esse foi um sistema desenvolvido em asp.net core, onde atraves do spech são pronunciadas frases e você deve escrever as palavras, com isso você pode melhorar o listem.
 
+### Tecnologias usadas
+
+* .Net
+* MSSQL.
+* Docker
+* DockerCompose
+* HTML, Javascript, Jquery, Css, Bootstrap.
+
+### O que foi feito
+
+Esse foi um sistema desenvolvido em asp.net core, onde atraves do spech são pronunciadas frases e você deve escrever as palavras, com isso você pode melhorar o listem.
 
 * Criar um FACADE
 * Criar um Singleton
