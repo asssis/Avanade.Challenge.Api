@@ -20,6 +20,10 @@
 
 Detalhes do sistema feito
 
+### Hospedagem
+* Google Clound
+* http://34.122.79.117/Home/Activity/1
+* http://34.122.79.117:80
 
 ### Tecnologias usadas
 
