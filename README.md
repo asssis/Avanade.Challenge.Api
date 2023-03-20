@@ -59,7 +59,7 @@ Banco
 Após disponíbilização do Banco de Dados, precisamos realizar o Migrations. Para isso, execute o comando abaixo.
 
 ```
-dotnet ef migrations add initialMigration --project .\src\School.API\
+dotnet ef migrations add initialMigration --project Avanade.Challenge.Api
 ```
  
 ```
